@@ -14,9 +14,7 @@
 %%%%%%%%%%%%%%%
 % Les packages utiles 
 %%%%%%%%%%%%%%%
-\LoadClass[a4paper,12pt,oneside,français]{book}
-\RequirePackage[frenchb]{babel}
-\RequirePackage[utf8]{inputenc} 
+\LoadClass[a4paper,12pt,oneside]{book}
 \RequirePackage[T1]{fontenc} 
 \RequirePackage{pslatex}
 \RequirePackage{aeguill}
@@ -27,7 +25,6 @@
 \RequirePackage{mathenv}
 \RequirePackage{dpfloat}
 \RequirePackage{array}
-\RequirePackage{color}
 \RequirePackage{graphics}
 \RequirePackage{calc}
 \RequirePackage{color}
@@ -54,6 +51,13 @@
 %%% On fixe les marges du document 
 \RequirePackage{geometry}
 \geometry{paperwidth=210mm, paperheight=297mm, left=71pt, right=60pt, top=60pt, marginparsep=30pt, marginparwidth=100pt, footskip=40pt}
+
+
+% encodage
+\usepackage{unicode-math}
+\setmainfont{TeX Gyre Pagella}
+\setmathfont{TeX Gyre Pagella Math}
+
 
 % interligne 
 \onehalfspacing
@@ -82,7 +86,8 @@
   \begin{center}%
     \setlength{\parskip}{3mm}
     {\bfseries 
-	\includegraphics[width=8cm]{logo/logouniversite}\\[0,5em]
+	\includegraphics[width=8cm]{logo/logouniversite}\\
+	\includegraphics[width=3cm]{logo/logo_mimo}\\[0,5em]
 	\textit{\nomDiplome}\par}
 	\begin{small}
 	        \vspace{0,5cm}
@@ -106,7 +111,7 @@
 
 
 
-      \hfill \rule{1.3cm}{\linethickness} \hfill\null  
+
 
 
 
@@ -115,7 +120,7 @@
 
 
 
-      \hfill \rule{1.3cm}{\linethickness} \hfill\null
+
 
 
 
